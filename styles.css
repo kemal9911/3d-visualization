@@ -1,0 +1,59 @@
+/* Basic layout */
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  overflow: hidden;
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* UI */
+#ui {
+  position: absolute;
+  z-index: 1000;
+  left: 12px;
+  top: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  pointer-events: auto;
+}
+
+#controls button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Tiles (CSS3D elements) */
+.element {
+  width: 140px;
+  height: 160px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.6);
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.element .name { font-weight:700; font-size:14px; }
+.element .company, .element .country { opacity: 0.95; font-size:12px; }
+.element .worth { margin-top:6px; font-weight:700; font-size:13px; text-align:right; }
