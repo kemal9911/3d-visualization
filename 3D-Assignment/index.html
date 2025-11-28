@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>3D Data Table — Assignment</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Login -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <!-- Three.js + dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r128/examples/js/renderers/CSS3DRenderer.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r128/examples/js/controls/TrackballControls.js"></script>
+  <script src="https://unpkg.com/@tweenjs/tween.js@18.6.4/dist/tween.umd.js"></script>
+
+  <script>
+    window.CLIENT_ID = "695285018350-uoqlr35lajl56dh2ovgl72j9v49j6023.apps.googleusercontent.com";
+    window.SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR4NHgJFUh2c0zgvUy39njl-b3crrKE-YUO1R1mD1KucPpV9NDETFB9SikAPDRuqhzGLLqMGwwYXsVc/pub?output=csv";
+  </script>
+</head>
+
+<body>
+  <div id="ui">
+    <div id="user-info">Please Sign In</div>
+    <div id="controls" style="display:none;">
+      <button id="tableBtn">Table (20×10)</button>
+      <button id="sphereBtn">Sphere</button>
+      <button id="helixBtn">Double Helix</button>
+      <button id="gridBtn">Grid (5×4×10)</button>
+    </div>
+  </div>
+
+  <div id="container"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
